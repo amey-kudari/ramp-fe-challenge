@@ -123,6 +123,7 @@ hr.RampBreak--l {
 
 .RampInputCheckbox--container {
   display: flex;
+  position: relative; /* BUG 2, to give the input checkbox an absolute position fixed relative to container */
 }
 
 .RampInputCheckbox--label {
@@ -149,8 +150,12 @@ hr.RampBreak--l {
   background-color: var(--color-constructive);
 }
 
-.RampInputCheckbox--input {
-  display: none;
+.RampInputCheckbox--input { /* BUG 2, make input overlap the label but make it invisible. Verified working with screen readers and keyboard */
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
 }
 
 .RampButton {
