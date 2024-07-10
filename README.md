@@ -1,3 +1,7 @@
+# Solution to each bug as a commit can be found here:
+https://github.com/amey-kudari/ramp-fe-challenge/commits/main/
+
+
 # Instructions
 
 Welcome to Ramp's frontend interview challenge.
